@@ -1,0 +1,141 @@
+/* Profile.css */
+@import url('https://fonts.googleapis.com/css2?family=Livvic:wght@400;500&display=swap');
+
+/* Overall background for ProfilePage */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.ProfilePage {
+    background-image: url("./assets/background.jpg.png");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+/* Header styles */
+.header {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Profile Section styling */
+.profile-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    flex-grow: 1;
+    overflow: hidden;
+}
+
+.profile-section {
+    background-color: rgba(234, 244, 242, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.profile-title {
+    font-size: 26px;
+    color: #2b7a78;
+    margin-bottom: 10px;
+}
+
+.profile-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.profile-pic {
+    width: 120px;
+    height: 120px;
+    background-color: #b7d3d2;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.profile-pic img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.profile-details {
+    text-align: left;
+    font-size: 18px;
+}
+
+.profile-details p {
+    margin: 10px 0;
+}
+
+/* Footer styles */
+.footer {
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    align-items: center;
+    padding: 20px;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+/* Ensure footer is at the bottom of the page */
+footer {
+    margin-top: auto;
+}
+
+/* Chat Bot styling */
+.chat-bot {
+    position: absolute;
+    right: 20px;
+    bottom: 80px;
+    width: 80px;
+    height: 80px;
+    z-index: 100;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .profile-main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .profile-section {
+        width: 100%;
+    }
+
+    .profile-info {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile-pic {
+        margin-bottom: 20px;
+    }
+}
